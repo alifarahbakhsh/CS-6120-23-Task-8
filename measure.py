@@ -33,10 +33,10 @@ if __name__ == "__main__":
     print(np.mean(absolute))
     print("std of absolute improvements for core:")
     print(np.std(absolute))
-    fig, (ax1, ax2) = plt.subplots(1, 2)
-    ax1.hist(improvement)
-    ax2.hist(absolute)
-    plt.show()
+    #fig, (ax1, ax2) = plt.subplots(1, 2)
+    #ax1.hist(improvement)
+    #ax2.hist(absolute)
+    #plt.show()
     
     with open("res-float.csv", "r") as f:
         res = csv.reader(f)
