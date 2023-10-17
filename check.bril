@@ -1,0 +1,21 @@
+@main() {
+    v1: int = const 1;
+    v2: int = const 2;
+    .entry.2:
+    x1: bool = const true;
+    .for.cond:
+        br x1 .for.body .for.end;
+        .for.body:
+            x2: bool = const false;
+            v3: int = mul v1 v2;
+            br x2 .if.true .if.false;
+            .if.true:
+                x1: bool = const false;
+                jmp .func.end;
+            .if.false:
+                jmp .entry.2;
+        .for.end:
+            print x2;
+    .func.end:
+        nop;
+}   
